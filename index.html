@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dive Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2929/2929546.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/2929/2929546.png" alt="">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <div class="login">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                </div>
+            </ul>
+            <div class="hamBtn">
+                <i id="hamIcon" class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="head-content">
+            <h2>Dive Club.<br>Explore the World.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi aliquam odio laudantium illo dignissimos tenetur esse quia, adipisci amet eius repudiandae officiis, animi ea accusantium consequuntur minima nihil earum cum similique ullam incidunt dolorem sed sunt eligendi. Nam, ipsum pariatur.</p>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <h2>Underwater.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus porro amet ut voluptatibus molestiae? Doloribus reiciendis accusantium numquam! Iusto recusandae sit voluptatem exercitationem minima soluta ducimus obcaecati saepe. Placeat molestias tenetur nostrum dolor accusamus.</p>
+        </div>
+        <div class="images">
+            <div class="img-1">
+                <img src="./assets/medusa.jpg" alt="">
+            </div>
+            <div class="img-2">
+                <img src="./assets/anemone.jpg" alt="">
+            </div>
+            <div class="img-3">
+                <img src="./assets/jellyfish.jpg" alt="">
+            </div>
+        </div>
+        <div class="view-more">
+            <a href="#">VIEW ALL PICTURES ></a>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            &copy; Dive Club. All rights reserved.
+        </div>
+        <div class="line">
+            |
+        </div>
+        <div class="foot-nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+        </div>
+    </footer>
+
+    <script>
+        let hamIcon = document.getElementById('hamIcon');
+        let navMenu = document.querySelector(".nav-menu")
+        hamIcon.onclick = ()=>{
+            hamIcon.classList.toggle("fa-xmark");
+            navMenu.classList.toggle("visible");
+        }
+    </script>
+</body>
+</html>
